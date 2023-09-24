@@ -94,10 +94,24 @@ litters_df =
     col_types = 
       cols(
         'GD0 weight' = col_factor()
-      )
-  )
+      ))
 ```
 
+## Look at other file types
+
+Import a xlsx file first(new readxl package)
+
+```{r}
+mlb_df = 
+  read_excel("data/mlb11.xlsx")
+```
+
+Import a SAS file(new haven package)
+
+```{r}
+pulse_df = 
+  read_sas("data/public_pulse_data.sas7bdat")
+```
 
 
 
